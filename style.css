@@ -53,6 +53,14 @@ nav > ul > li > a {
   font-weight: 600;
   line-height: normal;
 }
+nav div {
+  display: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 .banner-con {
   display: flex;
   gap: 9%;
@@ -65,26 +73,61 @@ nav > ul > li > a {
 .left-banner > h2 {
   color: var(--primary-color);
   font-size: 52px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 70px;
 }
 .left-banner > p {
+  padding: 10px;
   color: var(--primary-color);
   font-size: 16px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 .right-banner {
   padding-bottom: 60px;
   width: 50%;
   background-image: url("images/Circle\ design.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .right-banner > img {
-  width: fit-content;
+  width: 100%;
+  max-width: 440px;
 }
 
 @media screen and (max-width: 576px) {
+  header {
+    padding: 3% 6%;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  nav > h2 {
+    font-size: 16px;
+  }
+
+  nav > ul {
+    display: none;
+  }
+
+  nav div {
+    display: block;
+  }
+  .banner-con {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .left-banner {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+  .left-banner > h2 {
+    font-size: 28px;
+  }
+  .right-banner {
+    width: 100%;
+  }
 }
