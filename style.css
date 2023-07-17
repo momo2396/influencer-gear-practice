@@ -7,8 +7,13 @@
   --red-color: #e02c6d;
   font-family: Poppins;
 }
+body {
+  padding-left: 8.34%;
+  padding-right: 8.34%;
+}
 header {
-  padding: 6% 8.34%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 .btn-primary {
   border-radius: 41px;
@@ -80,6 +85,7 @@ nav div {
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 600;
+  margin-left: -10px;
 }
 .right-banner {
   padding-bottom: 60px;
@@ -96,7 +102,51 @@ nav div {
   width: 100%;
   max-width: 440px;
 }
-
+.logo-sec {
+  padding-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.popular-sec {
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.popular-sec > h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 5%;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.single-card {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.single-card > h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.single-card > img {
+  width: 100%;
+}
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+}
 @media screen and (max-width: 576px) {
   header {
     padding: 3% 6%;
