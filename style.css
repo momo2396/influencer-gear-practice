@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary-color: #3a3a3a;
+  --red-color: #e02c6d;
+  font-family: Poppins;
+}
+header {
+  padding: 6% 8.34%;
+}
+.btn-primary {
+  border-radius: 41px;
+  background: var(--red-color);
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 24px;
+  border: 0;
+  margin-left: -10px;
+  margin-top: 20px;
+}
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > h2 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.banner-con {
+  display: flex;
+  gap: 9%;
+  padding-top: 50.2px;
+}
+.left-banner {
+  padding-top: 95px;
+  width: 50%;
+}
+.left-banner > h2 {
+  color: var(--primary-color);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+}
+.left-banner > p {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.right-banner {
+  padding-bottom: 60px;
+  width: 50%;
+  background-image: url("images/Circle\ design.svg");
+  background-repeat: no-repeat;
+}
+.right-banner > img {
+  width: fit-content;
+}
+
+@media screen and (max-width: 576px) {
+}
